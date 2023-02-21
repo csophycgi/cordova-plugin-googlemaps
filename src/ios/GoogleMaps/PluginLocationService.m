@@ -188,6 +188,7 @@
 
     [json setObject:latLng forKey:@"latLng"];
     [json setObject:[NSNumber numberWithFloat:[self.locationManager.location speed]] forKey:@"speed"];
+    [json setObject:[NSNumber numberWithFloat:[self.locationManager.location course]] forKey:@"bearing"];
     [json setObject:[NSNumber numberWithFloat:[self.locationManager.location altitude]] forKey:@"altitude"];
 
     //todo: calcurate the correct accuracy based on horizontalAccuracy and verticalAccuracy
